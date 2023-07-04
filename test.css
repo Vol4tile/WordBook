@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,400;1,900&family=Ubuntu&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  height: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  width: 500px;
+  border-radius: 2rem;
+  height: 50vh;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.questions {
+  width: 500px;
+  height: 80%;
+}
+.question {
+  direction: ltr;
+  width: 500px;
+  min-height: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.counter {
+  background-color: bisque;
+}
+.answers {
+  background-color: #e7f6f2;
+  width: 450px;
+  min-width: fit-content;
+  border-radius: 15px;
+  padding-inline-start: 10px;
+  display: flex;
+  align-items: center;
+  margin: 3px;
+  height: 60px;
+}
+.answers:hover {
+  background-color: #ececec;
+  cursor: pointer;
+}
+.fail {
+  background-color: #ff9494;
+}
+.fail:hover {
+  background-color: #ff9494;
+  cursor: pointer;
+}
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+a:visited {
+  color: #000;
+}
+
+.answers {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+
+  -o-user-select: none;
+  user-select: none;
+}
+.seslendir {
+  position: relative;
+}
+.seslendir:hover {
+  cursor: pointer;
+}
+.seslendir img {
+  position: absolute;
+  top: 1px;
+}
