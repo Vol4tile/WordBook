@@ -1,6 +1,8 @@
 # WordBook
 VanillaJs
-![1](https://github.com/Vol4tile/WordBook/assets/104697209/647f1064-4e1c-4c6d-8566-02ad9405862f)
+![1](https://github.com/Vol4tile/WordBook/assets/104697209/d2b25640-6eaf-4838-a35f-31f7fadcb1d4)
+![2](https://github.com/Vol4tile/WordBook/assets/104697209/af4c8872-456e-4803-aad6-d2692125727a)
 
-![2](https://github.com/Vol4tile/WordBook/assets/104697209/225b7b9d-82ce-4a31-896f-dded97018cd7)
+
+
 
