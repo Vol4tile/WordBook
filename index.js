@@ -1116,42 +1116,39 @@ if (storedWords === null || storedWords.length < 1) {
     ["freedom", "özgürlük"],
   ];
   storedWords = defaultWords;
-
   storedWords = JSON.stringify(storedWords);
   localStorage.setItem("words", storedWords);
   storedWords = JSON.parse(storedWords);
 }
 let add = false;
 const wordsDiv = document.getElementsByClassName("words")[0];
+
 const sil = (i) => {
   storedWords.splice(i, 1);
-
   getStorage(storedWords);
   localStorage.setItem("words", JSON.stringify(storedWords));
 };
+
 const getStorage = (storedWords) => {
   wordsDiv.innerHTML = "";
-
   const fragment = document.createDocumentFragment();
-
   storedWords?.forEach((item, i) => {
     const listItem = document.createElement("li");
     listItem.classList.add("word");
     listItem.innerHTML = `${item[0]} <span class="versus"> - </span> ${item[1]}`;
-
     const deleteButton = document.createElement("div");
     deleteButton.classList.add("delete");
     deleteButton.setAttribute("onClick", `sil(${i})`);
     deleteButton.setAttribute("title", "Sil");
     deleteButton.textContent = "x";
-
     listItem.appendChild(deleteButton);
     fragment.appendChild(listItem);
   });
-
   wordsDiv.appendChild(fragment);
 };
+
 getStorage(storedWords);
+
 const addStorage = (e) => {
   let turkish = document.getElementsByName("turkish")[0].value;
   let english = document.getElementsByName("english")[0].value;
@@ -1168,6 +1165,7 @@ const addStorage = (e) => {
 
 let getAdd = document.getElementsByClassName("getAdd")[0];
 let addPage = document.getElementsByClassName("addPage")[0];
+
 getAdd.addEventListener("click", () => {
   let addPageInner = `<div class="fullPage">
     <span onClick="toggle()" class="versus" style="position:absolute;top:0;right:0" title="Kapat">X</span>
@@ -1184,6 +1182,7 @@ getAdd.addEventListener("click", () => {
 </div>
 <button class="addBtn" onClick=addStorage()>Ekle</button>
 </div>`;
+
   if (!add) {
     addPage.innerHTML = addPageInner;
     add = !add;
@@ -1192,6 +1191,7 @@ getAdd.addEventListener("click", () => {
     add = !add;
   }
 });
+
 function toggle() {
   addPage.innerHTML = "";
   add = !add;
